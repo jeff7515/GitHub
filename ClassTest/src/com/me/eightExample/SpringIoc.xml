@@ -1,0 +1,26 @@
+
+
+<bean id="springBean" class="com.me.SomeClass"
+	scope="singleton | prototype | request | session | globalSession"
+	autowire="no | byName | byType | autodetect | constructor"
+	lazy-init="true | false"
+	factory-method="someStaticMethod"
+	init-method="someNonStaticMethod"
+	destory-methid="someNonStaticMethod"
+>
+
+<property name="someName" value="someValue" />
+
+<property name="someName" ref="someBeanID" />
+
+<property name="someName">
+	<list>|<set>|<map>|<props>
+		<value>SomeValue</value>|
+		<value>SomeValue</value>|
+		<entry key="someKey" value="someValue"/>|
+		<prop key="someKey">SomeValue</prop>
+	</list>|</set>|</map>|</props>
+</property>
+
+|<constructor-arg index="someIndex" value="someValue"/>
+</bean>

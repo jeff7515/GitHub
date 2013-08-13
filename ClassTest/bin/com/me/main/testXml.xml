@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean id="someID" class="package.class"
+	scope="singleton, prototype, request, session, globalSession"
+	autowire="no, byName, byType, autodetect, constructor"
+	lazy-init="true, false" factory-method="someStaticMethod" 
+	init-method="someNonStaticMethod"
+	destory-method="someNonStaticMethod">
+	
+	<property name="someName" value="someValue" />
+	<property name="someName" ref="someBean" />
+
+	<list>
+		<value>SomeValue</value>
+	</list>
+	<set>
+		<value>someSetValue</value>
+	</set>
+	<map>
+		<entry key="" value="" />
+	</map>
+	<props>
+		<prop key="">someValue</prop>
+	</props>
+
+	<constructor-args index="" value=""/>
+</bean>
